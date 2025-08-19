@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewTituloCalculadora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculadora Java JairoMejia"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_span="3"
+                android:gravity="center"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- Valor A -->
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewTituloValorA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor A"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/editTextTituloValorA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- Valor B -->
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewTituloValorB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor B"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/editTextTituloValorB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- Botones Sumar y Restar -->
+        <TableRow>
+            <Button
+                android:id="@+id/buttonSumar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" + " />
+            <Button
+                android:id="@+id/buttonRestar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" - " />
+        </TableRow>
+
+        <!-- Botones Multiplicar y Dividir -->
+        <TableRow>
+            <Button
+                android:id="@+id/buttonMultiplicar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" × " />
+            <Button
+                android:id="@+id/buttonDividir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" ÷ " />
+        </TableRow>
+
+        <!-- Resultado -->
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewTituloResultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado"
+                android:layout_span="2"
+                android:padding="8dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/editTextTituloResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:layout_span="2"
+                android:padding="8dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
